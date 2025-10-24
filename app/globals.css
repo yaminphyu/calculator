@@ -24,3 +24,35 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.calc-container {
+  @apply flex min-h-screen flex-col items-center justify-center;
+}
+
+.calc-wrapper {
+  @apply h-[60vh] w-full md:w-[450px] gap-2 flex flex-col px-3;
+}
+
+.calc-header {
+  @apply flex items-center justify-between pb-5;
+}
+
+.calc-toggle-container {
+  @apply flex items-center space-x-1;
+}
+
+.calc-toggle-wrapper {
+  @apply w-16 h-6 rounded-full p-1 flex relative cursor-pointer;
+}
+
+.calc-toggle {
+  @apply w-4 h-4 rounded-full transition-transform duration-300;
+}
+
+.display-input {
+  @apply w-full h-full text-3xl md:text-4xl font-extrabold text-right py-5 px-7 focus:outline-none;
+}
+
+.dialog-input {
+  @apply rounded-lg font-extrabold shadow-md h-12 md:h-16;
+}
