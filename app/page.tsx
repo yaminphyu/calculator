@@ -9,7 +9,6 @@ import DisplayScreen from "./components/DisplayScreen";
 export default function Home() {
   const [display, setDisplay] = useState<string>("");
   const [themeName, setThemeName] = useState<'one' | 'two'>('one');
-  // const [theme, setTheme] = useState<'one' | 'two' | null>(null);
 
   const mainBg = constant[themeName].bg;
   const displayBg = constant[themeName].dispayBg;
